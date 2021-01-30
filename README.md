@@ -47,7 +47,7 @@ Currently, the `scripty.py` uses an api known as [The One API](https://the-one-a
 
 
 ## Running manually
-To start the program, clone the repository at `https://github.com/Federickg23/generativeArt.git` and run the commands reccomended in the [software](#ssoftware) section of this README. Enter the generativeArt folder and simply run `boot.sh`. It should start the Neopixel and soon after run the processing script.  
+To start the program, clone the repository at `https://github.com/Federickg23/generativeArt.git` and run the commands reccomended in the [software](#software) section of this README. Enter the generativeArt folder and simply run `boot.sh`. It should start the Neopixel and soon after run the processing script.  
 
 ## Run on boot
 
