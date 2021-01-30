@@ -1,6 +1,7 @@
 
 ArrayList<Ball> balls = new ArrayList<Ball>();
 int start = millis();
+int change = 0;
 int backgroundRed = 255;
 int backgroundGreen = 255;
 int backgroundBlue = 255;
@@ -14,7 +15,7 @@ void setup() {
 
 void draw() {
   background(backgroundRed, backgroundGreen, backgroundBlue);
-
+  change ++; 
   for (Ball b : balls) {
     b.update();
     b.display();
@@ -180,7 +181,10 @@ class Ball {
 
   void display() {
     noStroke();
-    fill(255, int(random(1,255)), int(random(1,255)));
+    if (change > 10){
+      fill(255, int(random(1,255)), int(random(1,255)));
+      change = 0; 
+    }
     ellipse(position.x, position.y, radius*2, radius*2);
   }
 }
