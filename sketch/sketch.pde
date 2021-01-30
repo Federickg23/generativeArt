@@ -30,10 +30,13 @@ void draw() {
     balls.add(new Ball(200, 400, radius));
     
     // If there are already twenty balls on screen set back to two balls
-    if (balls.size() > 20) {
-      balls = new ArrayList<Ball>();
-      balls.add(new Ball(100, 400, 20));
-      balls.add(new Ball(700, 400, 80));
+    if (balls.size() > 12) {
+      // balls = new ArrayList<Ball>();
+      // balls.add(new Ball(700, 400, 80));
+      int i = int(random(balls.size())); 
+      for(; i > 0; i --){ 
+        balls.remove(i); 
+      }
     }
     
     // Update the background color depending on the current amount of balls on the screen
@@ -55,7 +58,7 @@ class Ball {
   Ball(float x, float y, float r_) {
     position = new PVector(x, y);
     velocity = PVector.random2D();
-    velocity.mult(20);
+    velocity.mult(int(random(3, 15)));
     radius = r_;
     m = radius*.1;
   }
@@ -177,7 +180,7 @@ class Ball {
 
   void display() {
     noStroke();
-    fill(204);
+    fill(255, int(random(1,255)), int(random(1,255)));
     ellipse(position.x, position.y, radius*2, radius*2);
   }
 }
