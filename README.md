@@ -2,7 +2,7 @@
 
 This repository consists of a simple python program, a Processing script, along with a bash script, all intended to work together to create an appealing generative art experience. This program uses a monitor and a Neopixel module to generate a colorful ball display and a randomized LED activation system. When connected to a monitor, balls of various shapes and sizes spawn onscreen with a random direction and velocity, and interact both with other balls and the borders of the screen. When the Neopixel is hooked up, every 4 seconds there is the possibility for 1 of 8 LEDS to turn red, and every 12 seconds the Neopixel module resets itself to white. 
     
-<!-- [Video Demo](https://youtu.be/bRy3vwIOVYM) -->
+[Video Demo](https://youtu.be/KNExLvp8t4w)
 
 # Table of Contents <!-- omit in toc -->
 - [Setup](#setup)
@@ -51,4 +51,5 @@ To start the program, clone the repository at `https://github.com/Federickg23/ge
 
 ## Run on boot
 
-Still figuring this out
+To run on boot, use your favorite editor known as Vim. Type `sudo vim ~/.bashrc` and add the path to wherever boot.sh is. The paths in boot.sh are all absolute paths, so they may need to be edited to run on other systems, unless you have cloned this repository to the desktop folder of your raspberry pi. 
+With the path to boot.sh now in your `~/.bashrc` file, it should run on boot whenever the terminal is opened. 
