@@ -31,7 +31,7 @@ def active_led():
     threading.Timer(3.0, active_led).start()
 def blank_led():
     pixels.fill((255,255,255))
-    threading.Timer(12, blank_led).start()
+    threading.Timer(24, blank_led).start()
 
 active_led()
 blank_led()
