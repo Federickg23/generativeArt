@@ -1,4 +1,4 @@
-# Get the Ball Bouncing
+# Mounting Pressure
 
 This repository consists of a simple python program, a Processing script, along with a bash script, all intended to work together to create an appealing generative art experience. This program uses a monitor and a Neopixel module to generate a colorful ball display and a randomized LED activation system. When connected to a monitor, balls of various shapes and sizes spawn onscreen with a random direction and velocity, and interact both with other balls and the borders of the screen. When the Neopixel is hooked up, every 4 seconds there is the possibility for 1 of 8 LEDS to turn red, and every 12 seconds the Neopixel module resets itself to white. 
     
