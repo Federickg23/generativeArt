@@ -26,7 +26,7 @@ def active_led():
     dialog = results['docs'][random.randint(0,9)]['dialog']
     val = len(dialog)%8
     pixels[val] = (255,0,0)
-    print(val)
+    # print(val)
     pixels.show()
     threading.Timer(3.0, active_led).start()
 def blank_led():
